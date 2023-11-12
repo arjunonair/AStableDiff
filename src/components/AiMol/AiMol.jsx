@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import './AiMol.css'
 import DEFAULT_IMAGE_URL from '../Assets/me.png'
 
-const API_TOKEN = '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'; // Replace with your actual API key
-
+const API_TOKEN = process.env.REACT_APP_API_KEY
 
 const ImageGenerationForm = () => {
   const [loading, setLoading] = useState(false);
